@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yogamma.co.uk</title>
+    <link rel="stylesheet" href="extras.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="yogamma-text"><a href="#"><img src="images-rbg/yogamma-text-removebg.png"></a></li>
+                <input type="checkbox" id="check">
+                <div class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="extras.html">Extras</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </div>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Extras Page Info -->
+
+    <div id="extras-page-main-div">
+
+        <div id="extras-page-div-1">
+            <div id="goga-picture-1-div">
+                <img id="goga-picture-1" src="images-rbg/goga-picture-1.png">
+            </div>
+
+            <div id="goga-text-div">
+                <p id="goga-text">Goga</p>
+                <p id="goga-information-text">"Get warm and fuzzy comfort from our adorable goats, lose yourself in smiles and giggles all while releasing tension and tightness the body withholds whilst moving through yoga positions."</p>
+                <div id="muckybucketfarm-link-div">
+                    <a href="https://www.muckybucketfarm.co.uk/goga">Mucky Bucket Farm</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="extras-page-div-2">
+            <div id="reignite-womens-retreat-text-div">
+                <p id="reignite-womens-retreat-text">Reignite Women's Retreat</p>
+                <p id="reignite-womens-retreat-information-text">"Reignite is a holistic women's retreat. This is your  chance to get together with old friends and new, switch off from the daily grind and just BE. The aim for the weekend is to really reconnect with yourselves and to relax, reset and realign. You'll come away feeling spiritually, physically, and emotionally renewed - ready to approach life with your new found spark."</p>
+                <div id="bell-tent-glamping-link-div">
+                    <a href="https://www.belltentglamping.net">Bell Tent Glamping</a>
+                </div>
+            </div>
+
+            <div id="bell-tent-glamping-picture-1-div">
+                <img id="bell-tent-glamping-picture-1" src="images-rbg/bell-tent-glamping-logo-rbg.png">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- TESTING LINES SCREEN SIZE -->
+     
+    <div style="text-align: center; font-size: 24px; margin-top: 50px;">
+        Screen Size: <span id="screen-size"></span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Display the screen size on the webpage
+            document.getElementById('screen-size').textContent = `${window.innerWidth}px x ${window.innerHeight}px`;
+        });
+    </script>
+
+        <!-- Footer -->
+
+    <footer>
+        <div id="footer-div">
+            <div id="social-media-icons">
+                <a href="https://www.facebook.com/yogammarise"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yogammarise"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,270 @@
+#extras-page-main-div {
+    width: 100%;
+    height: auto;
+}
+
+/* Extras page div 1 */
+
+#extras-page-div-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#goga-picture-1-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+#goga-picture-1 {
+    width: 700px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 1000px;
+}
+
+#goga-text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 30px;
+    width: 50%;
+    height: 500px;
+    border-radius: 25px;
+    background-color: rgb(235, 235, 235);
+    border: 5px solid rgb(198, 124, 34);
+}
+
+#goga-text {
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(198, 124, 34);
+}
+
+#goga-information-text {
+    font-style: italic;
+    font-size: 2vw;
+    margin-top: 20px;
+    color: rgb(30, 40, 50);
+}
+
+#muckybucketfarm-link-div {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+#muckybucketfarm-link-div a {
+    color: rgb(30, 40, 50);  
+    font-size: 3vw;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+#muckybucketfarm-link-div a:hover {
+    color: rgb(198, 124, 34);
+}
+
+/* Extras page div 2 */
+
+#extras-page-div-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#reignite-womens-retreat-text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 30px;
+    width: 50%;
+    height: 500px;
+    border-radius: 25px;
+    background-color: rgb(235, 235, 235);
+    border: 5px solid rgb(198, 124, 34);
+}
+
+#reignite-womens-retreat-text {
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(198, 124, 34);
+}
+
+#reignite-womens-retreat-information-text {
+    font-style: italic;
+    font-size: 1.5vw;
+    margin-top: 20px;
+    color: rgb(30, 40, 50);
+}
+
+#bell-tent-glamping-link-div {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+#bell-tent-glamping-link-div a {
+    color: rgb(30, 40, 50);  
+    font-size: 3vw;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+#bell-tent-glamping-link-div a:hover {
+    color: rgb(198, 124, 34);
+}
+
+#bell-tent-glamping-picture-1-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+#bell-tent-glamping-picture-1 {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    padding: 20px;
+    border-radius: 1000px;
+    background-color: rgb(163, 174, 155);
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width: 1400px) {
+
+    #goga-picture-1 {
+        width: 600px;
+        height: 600px;
+    }
+
+    #goga-text-div {
+        height: 600px;
+    }
+
+    #bell-tent-glamping-picture-1-div {
+        width: 600px;
+        height: 600px;
+    }
+    
+    #reignite-womens-retreat-text-div {
+        height: 600px;
+    }
+}
+
+@media(max-width: 1200px) {
+
+    #goga-picture-1 {
+        width: 500px;
+        height: 500px;
+    }
+
+    #goga-text-div {
+        height: 500px;
+    }
+
+    #bell-tent-glamping-picture-1-div {
+        width: 500px;
+        height: 500px;
+    }
+    
+    #reignite-womens-retreat-text-div {
+        height: 500px;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    #extras-page-div-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #extras-page-div-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #goga-picture-1 {
+        width: 400px;
+        height: 400px;
+    }
+
+    #goga-text-div {
+        width: 100%;
+        height: 400px;
+    }
+
+    #goga-information-text {
+        font-size: 3vh;
+    }
+
+    #muckybucketfarm-link-div a {
+        font-size: 4vh;
+    }
+
+    #bell-tent-glamping-picture-1-div {
+        order: 1;
+        width: 400px;
+        height: 400px;
+    }
+    
+    #reignite-womens-retreat-text-div {
+        order: 2;
+        width: 100%;
+        height: 400px;
+    }
+
+    #reignite-womens-retreat-information-text {
+        font-size: 2vh;
+    }
+
+    #bell-tent-glamping-link-div a {
+        font-size: 4vh;
+    }
+}
+
+@media(max-width: 500px) {
+
+    #bell-tent-glamping-picture-1-div {
+        width: 350px;
+        height: 350px;
+        margin: 20px;
+    }
+
+    #goga-information-text {
+        font-size: 2.5vh;
+    }
+
+    #muckybucketfarm-link-div a {
+        font-size: 4vh;
+    }
+
+    #reignite-womens-retreat-text {
+        font-size: 4vh;
+    }
+
+    #reignite-womens-retreat-information-text {
+        font-size: 2vh;
+    }
+
+    #bell-tent-glamping-link-div a {
+        font-size: 4vh;
+    }
+}

@@ -1,0 +1,37 @@
+footer {
+    background-color: rgb(200, 200, 200);
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-media-icons {
+    display: flex;
+    gap: 30px;
+}
+
+#social-media-icons a {
+    color: white;
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+#social-media-icons a:hover {
+    color: rgb(198, 124, 34);
+}
+
+@media (max-width: 500px) { /* MEDIA FOR PHONES */
+
+    #social-media-icons a {
+        font-size: 22px;
+        gap: 20px;
+    }
+
+}

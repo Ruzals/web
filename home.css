@@ -1,14 +1,23 @@
+/* Home page main div */
+
+#home-page-main-div
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
 /* --- Home page div 1 --- */
 
 #home-page-div-1 {
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: auto;
-    justify-content: center;
-    align-items: center;
 }
 
-#yoga-picture-1-div {
+#yogamma-logo-art-div { /* Home page div 1 - Yogamma logo art div*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,216 +25,169 @@
     height: auto;
 }
 
-#yoga-picture-1 {
+#yogamma-logo-art {
     width: 700px;
     height: 700px;
     padding: 20px;
     border-radius: 1000px;
-    object-fit: cover;
 }
 
-#contact-me-div { /* Home page div 1 - Contact me div */
+#welcome-to-yogamma-div { /* Home page div 1 - Welcome to yogamma div */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 30px;
     width: 50%;
-    background-color: rgb(235, 235, 235);
-    border-top-left-radius: 25px;
+    height: 700px;
     border-bottom-left-radius: 25px;
+    border-left: 5px solid rgb(198, 124, 34);
+    border-bottom: 5px solid rgb(198, 124, 34);
+    background-color: rgb(235, 235, 235);
 }
 
-#contact-me-info {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
+#welcome-to-text {
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(30, 40, 50);  
 }
 
-#contact-me-phone {
-    display: flex;
+#yogamma-text {
     font-size: 100px;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
-    background-color: rgb(198, 124, 34);
-    border-radius: 20px;
-}
-.fa-solid.fa-phone {
-    font-size: 100px;
+    font-weight: bold;
+    color: rgb(198, 124, 34);
 }
 
-#contact-me-phone-text {
-    font-size: 40px;
-    margin-left: 20px;
+#yogamma-information-text {
+    font-size: 2vw;
+    margin-top: 30px;
+    color: rgb(30, 40, 50);
 }
 
-#contact-me-email {
-    display: flex;
-    font-size: 100px;
-    align-items: center;
-    margin: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: rgb(198, 124, 34);
-    border-radius: 20px;
-}
-.fa-solid.fa-envelope {
-    font-size: 100px;
-}
+#mobile-welcome-to-yogamma-div {
+    display: none;
+  }
 
-#contact-me-email-text {
-    font-size: 40px;
-    margin-left: 20px;
-}
 
-#contact-me-location {
-    display: flex;
-    font-size: 100px;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
-    padding-left: 25px;
-    background-color: rgb(198, 124, 34);
-    border-radius: 20px;
-}
-
-.fa-solid.fa-location-dot {
-    font-size: 100px;
-}
-
-#contact-me-location-text {
-    font-size: 40px;
-    margin-left: 20px;
-}
-
-/* Slide-in animation for contact me div */
-@keyframes slideInFromRight {
-    from {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* Animation for contact info boxes */
-#contact-me-phone,
-#contact-me-email,
-#contact-me-location {
-    animation: slideInFromRight 0.8s ease-out forwards;
-    opacity: 0; /* ensures they’re hidden before animation plays */
-}
-
-/* Staggering delays */
-#contact-me-phone {
-    animation-delay: 0.2s;
-}
-#contact-me-email {
-    animation-delay: 0.4s;
-}
-#contact-me-location {
-    animation-delay: 0.6s;
-}
 
 /* --- Home page div 2 --- */
 
 #home-page-div-2 {
-    display: flex;
     width: 100%;
     height: 200px; /* change this to auto later on */
     border: 5px solid green;
 }
 
+@media(max-width: 1400px) {
 
-
-@media(max-width: 1500px) { /* EXTRA MEDIA FOR SLIGHTLY SHRINKED TABS (1) */
-    
-    /* Home page div 1 */
-
-    #contact-me-email-text {
-        font-size: 30px;
+    #yogamma-logo-art {
+        width: 600px;
+        height: 600px;
+        border-radius: 1000px;
     }
 
+    #welcome-to-yogamma-div {
+        height: 600px;
+    }
+    
 }
 
+@media(max-width: 1200px) {
 
-@media(max-width: 1375px) { /* EXTRA MEDIA FOR SLIGHTLY SHRINKED TABS (2) */
-
-    /* Home page div 1 */
- 
-    #contact-me-div {
-        margin-left: 0px;
-    }
-
-    #contact-me-info {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding-top: 10px;
-    }
-
-    #yoga-picture-1 {
+    #yogamma-logo-art {
         width: 500px;
         height: 500px;
+        border-radius: 1000px;
     }
     
-    #contact-me-phone-text {
-        font-size: 30px;
-        margin-left: 20px;
+    #welcome-to-yogamma-div {
+        height: 500px;
     }
-    
-    #contact-me-email-text {
-        font-size: 20px;
-        margin-left: 20px;
+
+    #welcome-to-text {
+        font-size: 40px;
     }
-    
-    #contact-me-location-text {
-        font-size: 30px;
-        margin-left: 20px;
+
+    #yogamma-text {
+        font-size: 80px;
     }
-    
+
 }
 
-
-
-@media(max-width: 1000px) { /* MEDIA FOR TABLETS OR SHRINKED TABS */
-
-    /* Home page div 1 */
+@media(max-width: 1000px) {
     
-    #home-page-div-1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #yoga-picture-1-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
-
-    #yoga-picture-1 {
-        width: 100%;
+    #yogamma-logo-art {
+        width: 400px;
         height: 400px;
-        border-radius: 0;
-        padding: 0px;
-        object-fit: initial; /* this makes the image fit (stretch width-ways with) the div instead of it cropping */
+        border-radius: 1000px;
     }
 
-    #contact-me-div {
-        width: 100%;
+    #welcome-to-yogamma-div {
+        height: 400px;
+    }
+
+    #welcome-to-text {
+        font-size: 30px;
+    }
+
+    #yogamma-text {
+        font-size: 60px;
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    #yogamma-logo-art {
+        width: 300px;
+        height: 300px;
+        border-radius: 1000px;
+    }
+
+    #welcome-to-yogamma-div {
+        height: 300px;
+    }
+
+    #welcome-to-text {
+        font-size: 20px;
+    }
+
+    #yogamma-text {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    #yogamma-logo-art {
+        width: 250px;
+        height: 250px;
+        border-radius: 1000px;
+    }
+
+    #welcome-to-yogamma-div {
+        height: 250px;
     }
     
 }
 
+@media(max-width: 500px) { /* MEDIA FOR SMALLER TABLETS */
 
+    #yogamma-logo-art {
+        width: 200px;
+        height: 200px;
+        border-radius: 1000px;
+    }
+
+    #welcome-to-text {
+        font-size: 20px;
+    }
+
+    #yogamma-text {
+        font-size: 40px;
+    }
+
+}
 
 @media(max-width: 440px) { /* MEDIA FOR PHONES */
 
@@ -233,103 +195,75 @@
     
     #home-page-div-1 {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto;
     }
 
-    #yoga-picture-1-div {
+    #yogamma-logo-art-div {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 
-    #yoga-picture-1 {
-        width: 100%;
-        height: 300px;
-        border-radius: 0;
-        padding: 0px;
+    #yogamma-logo-art {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border-radius: 1000px;
+        object-fit: cover;
     }
 
-    #contact-me-div {
-        width: 100%;
-        margin: 0px;
+    #welcome-to-yogamma-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        border: none;
+        background-color: white;
     }
 
-    #contact-me-info {
+    #welcome-to-text {
+        font-size: 20px;
+    }
+
+    #yogamma-text {
+        font-size: 40px;
+    }
+
+    #yogamma-information-text {
+        display: none;
+    }
+
+    #mobile-welcome-to-yogamma-div {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding-top: 10px;
-    }
-
-    #contact-me-phone {
-        display: flex;
-        font-size: 50px;
-        align-items: center;
-        margin: 20px;
         padding: 10px;
-        background-color: rgb(198, 124, 34);
-        border-radius: 20px;
-    }
-
-    .fa-solid.fa-phone {
-        font-size: 50px;
-    }
-
-    #contact-me-phone-text {
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-    #contact-me-email {
-        display: flex;
-        font-size: 50px;
-        align-items: center;
-        margin: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
-        background-color: rgb(198, 124, 34);
-        border-radius: 20px;
-    }
-
-    .fa-solid.fa-envelope {
-        font-size: 50px;
-    }
-
-    #contact-me-email-text {
-        font-size: 15px;
-        margin-left: 20px;
-    }
-
-    #contact-me-location {
-        display: flex;
-        font-size: 50px;
-        align-items: center;
-        margin: 20px;
-        padding: 10px;
-        padding-left: 25px;
-        background-color: rgb(198, 124, 34);
-        border-radius: 20px;
-    }
-    .fa-solid.fa-location-dot {
-        font-size: 50px;
-    }
-
-    #contact-me-location-text {
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-/* --- Home page div 2 --- */
-
-#home-page-div-2 {
-    display: flex;
-    width: 100%;
-    height: 200px; /* change this to auto later on */
-    border: 5px solid green;
+        border: 5px solid rgb(198, 124, 34);
+        background-color: rgb(235, 235, 235);
+      }
 }
 
+@media(max-width: 300px) { /* MEDIA FOR SMALL PHONES */
+
+    #yogamma-logo-art {
+        width: 150px;
+        height: 150px;
+    }
+
+    #welcome-to-text {
+        font-size: 15px;
+    }
+
+    #yogamma-text {
+        font-size: 30px;
+    }
 }
